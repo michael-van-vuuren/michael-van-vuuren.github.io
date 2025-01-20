@@ -15,8 +15,10 @@ html {
   background: #d3d4db;
   font-size: 16px;
   font-size: calc(0.8rem + 0.3vw);
-  padding: 0 calc(38% - 21em);
+  padding: 0 0;
 }
+
+/* calc(38% - 21em) */
 
 body {
   background: #ffffff;
