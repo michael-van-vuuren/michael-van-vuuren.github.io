@@ -1,4 +1,4 @@
-A@font-face {
+@font-face {
   font-family: "PT Sans";
   src: local("PT Sans"), local("PTSans-Regular"), url("../fonts/PTSans-Regular.woff") format("woff");
   font-weight: normal;
@@ -211,41 +211,4 @@ nav a {
 .katex {
   overflow-x: auto;
   overflow-y: hidden;
-}
-
-/* NAV BAR */
-.site-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1rem;
-  background-color: #f8f9fa;
-}
-
-.site-title {
-  font-size: 1.5rem;
-  font-weight: bold;
-  text-decoration: none;
-  color: #333;
-}
-
-.site-navigation .nav-list {
-  display: flex;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-.site-navigation .nav-item {
-  margin: 0 1rem;
-}
-
-.site-navigation .nav-link {
-  text-decoration: none;
-  color: #007bff;
-  font-size: 1rem;
-}
-
-.site-navigation .nav-link:hover {
-  text-decoration: underline;
 }

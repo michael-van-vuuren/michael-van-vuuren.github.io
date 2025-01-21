@@ -2,14 +2,14 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/categories/</loc>
+    <loc>https://michael-van-vuuren.github.io/categories/</loc>
   </url><url>
-    <loc>http://localhost:1313/posts/mypost/</loc>
+    <loc>https://michael-van-vuuren.github.io/posts/mypost/</loc>
   </url><url>
-    <loc>http://localhost:1313/</loc>
+    <loc>https://michael-van-vuuren.github.io/</loc>
   </url><url>
-    <loc>http://localhost:1313/posts/</loc>
+    <loc>https://michael-van-vuuren.github.io/posts/</loc>
   </url><url>
-    <loc>http://localhost:1313/tags/</loc>
+    <loc>https://michael-van-vuuren.github.io/tags/</loc>
   </url>
 </urlset>
