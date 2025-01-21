@@ -2,11 +2,27 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://michael-van-vuuren.github.io/about/</loc>
+    <lastmod>2025-01-20T18:31:30-07:00</lastmod>
+  </url><url>
+    <loc>https://michael-van-vuuren.github.io/</loc>
+    <lastmod>2025-01-20T18:31:30-07:00</lastmod>
+  </url><url>
+    <loc>https://michael-van-vuuren.github.io/conclusion/</loc>
+    <lastmod>2025-01-20T18:31:26-07:00</lastmod>
+  </url><url>
+    <loc>https://michael-van-vuuren.github.io/models/</loc>
+    <lastmod>2025-01-20T18:31:23-07:00</lastmod>
+  </url><url>
+    <loc>https://michael-van-vuuren.github.io/exploratory-data-analysis/</loc>
+    <lastmod>2025-01-20T18:31:18-07:00</lastmod>
+  </url><url>
+    <loc>https://michael-van-vuuren.github.io/introduction/</loc>
+    <lastmod>2025-01-20T18:29:05-07:00</lastmod>
+  </url><url>
     <loc>https://michael-van-vuuren.github.io/categories/</loc>
   </url><url>
     <loc>https://michael-van-vuuren.github.io/posts/mypost/</loc>
-  </url><url>
-    <loc>https://michael-van-vuuren.github.io/</loc>
   </url><url>
     <loc>https://michael-van-vuuren.github.io/posts/</loc>
   </url><url>

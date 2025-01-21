@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+  <title>Introduction | Michael Van Vuuren ML</title>
+  <meta charset="utf-8">
+  <meta name="generator" content="Hugo 0.141.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://michael-van-vuuren.github.io/css/index.css">
+  <link rel="canonical" href="https://michael-van-vuuren.github.io/introduction/">
+  <link rel="alternate" type="application/rss+xml" href="" title="Michael Van Vuuren ML">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+
+<header class="header">
+  
+  <div class="home">
+    <a href="https://michael-van-vuuren.github.io/" class="home-link">
+      <i class="fas fa-home"></i>
+      <p class="website">Machine Learning</p>
+    </a>
+  </div>
+
+  
+  <div class="navbar">
+    <nav>
+      <ul class="navbar-list">
+        <li class="navbar-item"><a href="https://michael-van-vuuren.github.io/introduction/" class="navbar-link">Introduction</a></li>
+        <li class="navbar-item"><a href="https://michael-van-vuuren.github.io/exploratory-data-analysis/" class="navbar-link">EDA</a></li>
+        <li class="navbar-item"><a href="https://michael-van-vuuren.github.io/models/" class="navbar-link">Models</a></li>
+        <li class="navbar-item"><a href="https://michael-van-vuuren.github.io/conclusion/" class="navbar-link">Conclusion</a></li>
+        <li class="navbar-item"><a href="https://michael-van-vuuren.github.io/about/" class="navbar-link">About</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<article>
+  <header>
+    <h1>Introduction</h1>
+    <time datetime="2025-01-20T18:29:05-07:00">January 20, 2025</time>
+  </header>
+  <p>This is the introduction page.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>print(<span style="color:#e6db74">&#39;Hello, world&#39;</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>a <span style="color:#f92672">=</span> <span style="color:#ae81ff">2</span>
+</span></span><span style="display:flex;"><span>b <span style="color:#f92672">=</span> <span style="color:#ae81ff">4</span>
+</span></span><span style="display:flex;"><span>c <span style="color:#f92672">=</span> a <span style="color:#f92672">+</span> b
+</span></span></code></pre></div><p>hi hi hi</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#75715e"># Copyright 2019 The TensorFlow Authors. All Rights Reserved.</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">#</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Licensed under the Apache License, Version 2.0 (the &#34;License&#34;);</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># you may not use this file except in compliance with the License.</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># You may obtain a copy of the License at</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">#</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">#     http://www.apache.org/licenses/LICENSE-2.0</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">#</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Unless required by applicable law or agreed to in writing, software</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># distributed under the License is distributed on an &#34;AS IS&#34; BASIS,</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># See the License for the specific language governing permissions and</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># limitations under the License.</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># ==============================================================================</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># LINT.IfChange</span>
+</span></span><span style="display:flex;"><span><span style="color:#e6db74">&#34;&#34;&#34;TensorFlow root package&#34;&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">import</span> sys <span style="color:#66d9ef">as</span> _sys
+</span></span><span style="display:flex;"><span><span style="color:#f92672">import</span> importlib <span style="color:#66d9ef">as</span> _importlib
+</span></span><span style="display:flex;"><span><span style="color:#f92672">import</span> types <span style="color:#66d9ef">as</span> _types
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Since TensorFlow Python code now resides in tensorflow_core but TensorFlow</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># ecosystem code imports tensorflow, we need to do forwarding between the two.</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># To do so, we use a lazy loader to load and forward the top level modules. We</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># cannot use the LazyLoader defined by tensorflow at</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># tensorflow/python/util/lazy_loader.py as to use that we would already need to</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># import tensorflow. Hence, we define it inline.</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">_LazyLoader</span>(_types<span style="color:#f92672">.</span>ModuleType):
+</span></span><span style="display:flex;"><span>  <span style="color:#e6db74">&#34;&#34;&#34;Lazily import a module so that we can forward it.&#34;&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  <span style="color:#75715e"># The lint error here is incorrect.</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">def</span> __init__(self, local_name, parent_module_globals, name):
+</span></span><span style="display:flex;"><span>    self<span style="color:#f92672">.</span>_local_name <span style="color:#f92672">=</span> local_name
+</span></span><span style="display:flex;"><span>    self<span style="color:#f92672">.</span>_parent_module_globals <span style="color:#f92672">=</span> parent_module_globals
+</span></span><span style="display:flex;"><span>    super(_LazyLoader, self)<span style="color:#f92672">.</span>__init__(name)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">_load</span>(self):
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;&#34;&#34;Import the target module and insert it into the parent&#39;s namespace.&#34;&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>    module <span style="color:#f92672">=</span> _importlib<span style="color:#f92672">.</span>import_module(self<span style="color:#f92672">.</span>__name__)
+</span></span><span style="display:flex;"><span>    self<span style="color:#f92672">.</span>_parent_module_globals[self<span style="color:#f92672">.</span>_local_name] <span style="color:#f92672">=</span> module
+</span></span><span style="display:flex;"><span>    self<span style="color:#f92672">.</span>__dict__<span style="color:#f92672">.</span>update(module<span style="color:#f92672">.</span>__dict__)
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> module
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">def</span> __getattr__(self, item):
+</span></span><span style="display:flex;"><span>    module <span style="color:#f92672">=</span> self<span style="color:#f92672">.</span>_load()
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> getattr(module, item)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">def</span> __dir__(self):
+</span></span><span style="display:flex;"><span>    module <span style="color:#f92672">=</span> self<span style="color:#f92672">.</span>_load()
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> dir(module)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">__reduce__</span>(self):
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> __import__, (self<span style="color:#f92672">.</span>__name__,)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Forwarding a module is as simple as lazy loading the module from the new path</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># and then registering it to sys.modules using the old path</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">_forward_module</span>(old_name):
+</span></span><span style="display:flex;"><span>  parts <span style="color:#f92672">=</span> old_name<span style="color:#f92672">.</span>split(<span style="color:#e6db74">&#34;.&#34;</span>)
+</span></span><span style="display:flex;"><span>  parts[<span style="color:#ae81ff">0</span>] <span style="color:#f92672">=</span> parts[<span style="color:#ae81ff">0</span>] <span style="color:#f92672">+</span> <span style="color:#e6db74">&#34;_core&#34;</span>
+</span></span><span style="display:flex;"><span>  local_name <span style="color:#f92672">=</span> parts[<span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>]
+</span></span><span style="display:flex;"><span>  existing_name <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;.&#34;</span><span style="color:#f92672">.</span>join(parts)
+</span></span><span style="display:flex;"><span>  _module <span style="color:#f92672">=</span> _LazyLoader(local_name, globals(), existing_name)
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">return</span> _sys<span style="color:#f92672">.</span>modules<span style="color:#f92672">.</span>setdefault(old_name, _module)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># This list should contain all modules _immediately_ under tensorflow</span>
+</span></span><span style="display:flex;"><span>_top_level_modules <span style="color:#f92672">=</span> [
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;tensorflow._api&#34;</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;tensorflow.python&#34;</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;tensorflow.tools&#34;</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;tensorflow.core&#34;</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;tensorflow.compiler&#34;</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;tensorflow.lite&#34;</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;tensorflow.keras&#34;</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;tensorflow.compat&#34;</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;tensorflow.summary&#34;</span>,  <span style="color:#75715e"># tensorboard</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;tensorflow.examples&#34;</span>,
+</span></span><span style="display:flex;"><span>]
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Lazy load all of the _top_level_modules, we don&#39;t need their names anymore</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">for</span> _m <span style="color:#f92672">in</span> _top_level_modules:
+</span></span><span style="display:flex;"><span>  _forward_module(_m)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># We still need all the names that are toplevel on tensorflow_core</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">from</span> tensorflow_core <span style="color:#f92672">import</span> <span style="color:#f92672">*</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>_major_api_version <span style="color:#f92672">=</span> <span style="color:#ae81ff">2</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># These should not be visible in the main tf module.</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">try</span>:
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">del</span> core
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">except</span> <span style="color:#a6e22e">NameError</span>:
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">pass</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">try</span>:
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">del</span> python
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">except</span> <span style="color:#a6e22e">NameError</span>:
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">pass</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">try</span>:
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">del</span> compiler
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">except</span> <span style="color:#a6e22e">NameError</span>:
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">pass</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">try</span>:
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">del</span> tools
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">except</span> <span style="color:#a6e22e">NameError</span>:
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">pass</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">try</span>:
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">del</span> examples
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">except</span> <span style="color:#a6e22e">NameError</span>:
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">pass</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># LINT.ThenChange(//tensorflow/virtual_root_template_v1.__init__.py.oss)</span>
+</span></span></code></pre></div>
+</article>
+
+
+
+</body>
+</html>

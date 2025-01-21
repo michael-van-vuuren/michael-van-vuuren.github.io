@@ -15,7 +15,7 @@ html {
   background: #d3d4db;
   font-size: 16px;
   font-size: calc(0.8rem + 0.3vw);
-  padding: 0 0;
+  padding: 0;
 }
 
 /* calc(38% - 21em) */
@@ -211,4 +211,82 @@ nav a {
 .katex {
   overflow-x: auto;
   overflow-y: hidden;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(255,255,255);
+  padding: 0 2rem;
+  border-bottom: 0.08rem solid #eee;
+  height: 3.8rem;
+}
+
+.home {
+  margin-right: auto;
+  padding-left: 9%;  
+}
+
+body {  min-width: 1200px; }
+
+.home-link {
+  text-decoration: none;
+  color: #222222;
+  font-size: 1.1rem;
+  padding: 0.5rem 1rem;
+}
+
+.home-link:hover {
+  color: #222222aa;
+  transition: color 0.2s linear;
+  text-decoration: none;
+}
+
+.navbar {
+  display: flex;
+  padding-right: 10%;
+}
+
+nav {
+  margin: 0;
+}
+
+.navbar-list {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-item {
+  position: relative;
+  padding: 0;
+  margin: 0;
+}
+
+.navbar-link {
+  position: relative;
+  text-decoration: none;
+  color: #222222;
+  display: inline-block;
+  padding: 15px 20px;
+  margin: 0;
+  text-align: center;
+  border: none;
+  transition: background-color 0.2s ease;
+  font-size: 0.9rem;
+  font-weight: normal;
+}
+
+.navbar-item:hover .navbar-link {
+  text-decoration: none;
+  color: #222222aa;
+}
+
+.website {
+  display: inline;
+  color: black;
+  font-size: 0.9rem;
+  margin-left: 1.0rem;
 }
